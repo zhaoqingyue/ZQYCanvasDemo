@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.image.ImageActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWindows">
+
+    <include layout="@layout/layout_top"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLine"
+        android:padding="10dp"
+        android:text="图片"/>
+
+    <com.zqy.canvasdemo.module.image.PictureView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorDisable"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLine"
+        android:padding="10dp"
+        android:text="位图"/>
+
+
+
+</LinearLayout>

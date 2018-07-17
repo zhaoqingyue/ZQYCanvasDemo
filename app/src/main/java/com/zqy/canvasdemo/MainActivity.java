@@ -1,46 +1,73 @@
 package com.zqy.canvasdemo;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 
-import butterknife.ButterKnife;
+import com.zqy.canvasdemo.base.BaseActivity;
+import com.zqy.canvasdemo.module.color.ColorActivity;
+import com.zqy.canvasdemo.module.graph.GraphActivity;
+import com.zqy.canvasdemo.module.image.ImageActivity;
+import com.zqy.canvasdemo.module.path.PathActivity;
+import com.zqy.canvasdemo.module.text.TextActivity;
+
+import butterknife.BindView;
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
-//    @BindView(R.id.tv_dian0)
-//    TextView tv_dian0;
-//    @BindView(R.id.tv_dian1)
-//    TextView tv_dian1;
-
-    ViewGroup viewGroup;
+    @BindView(R.id.tv_des)
+    TextView des;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
-
-        TextView dian0 = (TextView) findViewById(R.id.tv_dian0);
-        dian0.setTextSize(25);
+    protected int getLayoutResID() {
+        return R.layout.activity_main;
     }
 
-    @OnClick({R.id.tv_dian0, R.id.tv_dian1})
+    @Override
+    protected String getTitleName() {
+        return getResources().getString(R.string.app_name);
+    }
+
+    @Override
+    protected void initData() {
+
+    }
+
+    @Override
+    protected void loadData() {
+
+    }
+
+    @OnClick({R.id.btn_color, R.id.btn_text, R.id.btn_graph, R.id.btn_image, R.id.btn_path, R.id.btn_operate})
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.tv_dian0: {
-                Intent intent = new Intent(this, TestActivity.class);
+            case R.id.btn_color: {
+                Intent intent = new Intent(this, ColorActivity.class);
                 startActivity(intent);
-
-
-
                 break;
             }
-            case R.id.tv_dian1: {
+            case R.id.btn_text: {
+                Intent intent = new Intent(this, TextActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.btn_graph: {
+                Intent intent = new Intent(this, GraphActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.btn_image: {
+                Intent intent = new Intent(this, ImageActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.btn_path: {
+                Intent intent = new Intent(this, PathActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.btn_operate: {
                 Intent intent = new Intent(this, TestActivity.class);
                 startActivity(intent);
                 break;

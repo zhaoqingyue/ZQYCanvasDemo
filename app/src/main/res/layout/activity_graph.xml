@@ -2,62 +2,62 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_graph"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".module.graph.GraphActivity"
     android:orientation="vertical"
     android:background="@color/colorWindows">
 
     <include layout="@layout/layout_top"/>
 
     <Button
-        android:id="@+id/btn_color"
+        android:id="@+id/btn_point"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="颜色"/>
+        android:text="点"/>
 
     <Button
-        android:id="@+id/btn_text"
+        android:id="@+id/btn_line"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="文本"/>
+        android:text="线"/>
 
     <Button
-        android:id="@+id/btn_graph"
+        android:id="@+id/btn_rect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="图形"/>
+        android:text="矩形"/>
 
     <Button
-        android:id="@+id/btn_image"
+        android:id="@+id/btn_roundRect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="图片"/>
+        android:text="圆角矩形"/>
 
     <Button
-        android:id="@+id/btn_path"
+        android:id="@+id/btn_arc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="路径"/>
+        android:text="圆弧"/>
 
     <Button
-        android:id="@+id/btn_operate"
+        android:id="@+id/btn_circle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="操作"/>
+        android:text="圆"/>
 
-    <TextView
-        android:id="@+id/tv_des"
+    <Button
+        android:id="@+id/btn_oval"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:text=""/>
+        android:textAllCaps="false"
+        android:text="椭圆"/>
 
 </LinearLayout>

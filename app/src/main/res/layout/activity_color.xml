@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.color.ColorActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWindows">
+
+    <include layout="@layout/layout_top"/>
+
+    <Button
+        android:id="@+id/btn_drawColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="drawColor()"/>
+
+    <Button
+        android:id="@+id/btn_drawRGB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="drawRGB()"/>
+
+    <Button
+        android:id="@+id/btn_drawARGB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="drawARGB()"/>
+
+    <com.zqy.canvasdemo.module.color.ColorView
+        android:id="@+id/colorView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
