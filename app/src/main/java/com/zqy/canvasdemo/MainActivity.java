@@ -8,7 +8,6 @@ import com.zqy.canvasdemo.base.BaseActivity;
 import com.zqy.canvasdemo.module.color.ColorActivity;
 import com.zqy.canvasdemo.module.graph.GraphActivity;
 import com.zqy.canvasdemo.module.image.ImageActivity;
-import com.zqy.canvasdemo.module.path.PathActivity;
 import com.zqy.canvasdemo.module.text.TextActivity;
 
 import butterknife.BindView;
@@ -63,13 +62,13 @@ public class MainActivity extends BaseActivity {
                 break;
             }
             case R.id.btn_path: {
-                Intent intent = new Intent(this, PathActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(this, TestActivity.class);
+//                startActivity(intent);
                 break;
             }
             case R.id.btn_operate: {
-                Intent intent = new Intent(this, TestActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(this, TestActivity.class);
+//                startActivity(intent);
                 break;
             }
         }
